@@ -1,6 +1,4 @@
-/**
- * script para mostrar u ocultar los datos de interés
- */
+//Evento que cambia el comportamiento del display
 let botones = document.getElementsByClassName('vista');
 for(let i=0; i<botones.length; i++){
     botones[i].addEventListener('click', function () {

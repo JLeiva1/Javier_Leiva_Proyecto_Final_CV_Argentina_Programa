@@ -1,7 +1,8 @@
+//Se declaran variables
 let foto, nombre, apellido, genero, pais, provincia, calle, numero;
 let correoElect, fechaNac, edad, telMovil, seed;
 
-
+//Se optienen datos de la API
 $.ajax({
     url: 'https://randomuser.me/api/?nat=br',
     dataType: 'json',

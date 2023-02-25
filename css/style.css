@@ -1,29 +1,4 @@
-/*Paleta de colores modo claro
-color-1
-#048A81
-color-2
-#6bada9
-color-3
-#54C6EB
-color-pagina
-white
-color-texto
-black
-
-*/
-/*Paleta de colores modo oscuro
-color-1
-#334f48
-color-2
-#172a21
-color-3
-#5d8883
-color-pagina
-#334f48
-color-texto
-darkgray
-*/
-
+/*Color de la pagina*/
 :root{
     font-size: 15px;
     font-family: 'EB Garamond', serif, 'Poppins', sans-serif;
