@@ -1,11 +1,12 @@
 /*Color de la pagina*/
 :root{
-    font-size: 15px;
+    font-size: 1rem;
     font-family: 'EB Garamond', serif, 'Poppins', sans-serif;
-    --color-1: #A9E7F8;
-    --color-2: #c2a0a0;
+    --color-1: rgb(253, 131, 93);
+    --color-2: rgb(214, 106, 106);
     --color-3: #d86060;
-    --color-pagina: white;
+    --color-pagina: rgb(255, 239, 234);
+    --color-titulo: rgb(146, 0, 0);
     --color-texto: black;
 }
 
@@ -20,9 +21,9 @@ body{
     display: flexbox;
     justify-content:center;
     margin: auto;
-    min-width: 650px;
+    min-width: 40rem;
     max-width: 65%;
-    padding: 30px;
+    padding: 1.7rem;
     background-color: var(--color-pagina);
 }
 
@@ -32,18 +33,15 @@ body{
 
 p{
     font-family: 'EB Garamond', serif;
-    font-size: 1.05em;
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
 /* Elementos del encabezado */
 .encabezado{
-    height: 200px;
-    display: flex;
+    height: 12rem;
 }
 nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center ;
     padding: 2.1rem 1rem;
     background-color: var(--color-2);
 }
@@ -52,10 +50,6 @@ nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-nav ul li{
-    display: inline-block;
-
 }
 nav ul li a{
     color: var(--color-texto);
@@ -67,6 +61,7 @@ nav ul li a{
 
 .datos li{
     list-style-type: none;
+    margin-top: 1rem;
 }
 
 #modoVis{
@@ -75,17 +70,16 @@ nav ul li a{
 #modoVis:hover, nav ul li a:hover{
     cursor: pointer;
     background-color: var(--color-1);
-    border-radius: 6px;
+    border-radius: 0.4rem;
 }
 
 /*Contenedor de la foto de perfil (figure e img)*/
 #perfil{
-    float: left;
-    min-width: 128px;
-    max-width: 140px;
+    min-width: 8rem;
+    max-width: 8.7rem;
     width: 20%;
     height: 100%;
-    margin-left: 10px;
+    margin-left: 0.6rem;
 }
 
 /* figure contenedor de img*/
@@ -94,8 +88,8 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 128px;
-    min-height: 128px;
+    min-width: 8rem;
+    min-height: 8rem;
     width: 99%;
     height: 99%;
 
@@ -104,8 +98,8 @@ nav ul li a{
 /* img contenedor de la imagen de perfil */
 #fotoPerfil{
     border-radius: 50%;
-    width: 128px;
-    height: 128px;
+    width: 8rem;
+    height: 8rem;
 }
 
 /* clase contenedora de las img */
@@ -118,19 +112,25 @@ nav ul li a{
 }
 
 .upArrow{
-    height: 20px;
+    height: 1.2rem;
 }
 
 .downArrow{
-    height: 20px;
+    height: 1.2rem;
 }
 
 /* Elementos del cuerpo*/
 
 .tematicaBarra{
     clear: both;
-    border-top: 3px solid var(--color-3);
-    padding-bottom: 10px;
+    border-top: 0.2rem solid var(--color-3);
+    padding-bottom: 0.6rem;
+}
+
+.contactUs{
+    border-top: 0.2rem solid var(--color-3);
+    padding-bottom: 0.6rem;
+    float: left;
 }
 
 .datos {
@@ -139,15 +139,14 @@ nav ul li a{
 
 .resaltar {
     font-family: 'Poppins', sans-serif;
-    text-decoration: underline;
 }
 
 .vista {
-    margin-top: 10px;
-    margin-right: 20px;
+    margin-top: 0.6rem;
+    margin-right: 1.2rem;
     float: right;
-    padding: 7px;
-    border-radius: 3px;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
 }
 .vista:hover{
     background-color: var(--color-2);
@@ -155,9 +154,19 @@ nav ul li a{
     cursor: pointer;
 }
 
+.iconoTitulo {
+    float: left;
+    flex-direction: row;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
 .titulo {
-    padding-bottom: 4em;
-    border-bottom: 1px solid var(--color-3);
+    padding-bottom: 4rem;
+    border-bottom: 0.06rem solid var(--color-3);
+    color: var(--color-titulo);
+    
 }
 .titulo h3 {
     float: left;
@@ -176,32 +185,164 @@ footer {
     border-top: 1px solid var(--color-3);
     padding-top: 1em;
     text-align: center;
-    margin-top: 20px;
-}
-
-#btnToTop{
-    display: none;
-    position: fixed;
-    right: 30px;
-    bottom: 20px;
-
-    padding: 20px 8px;
-    background-color: var(--color-1);
-    color: var(--color-3);
-    border-radius: 30%;
-    height: 5rem;
-    width: 5rem;
-    font-size: 5rem;
-    text-align: center;
-    vertical-align:text-bottom;
-    cursor: pointer;
-}
-
-#btnToTop:hover{
-    transform: scale(1.25);
-    transition: 0.5s ease 0.05s;
+    margin-top: 1.2rem;
 }
 
 #dayNight{
-    height: 2rem;
+    height: 3rem;
+}
+
+.formulario{
+    color: white;
+    font-family: 'Rubik Distressed';
+    font-size: 1rem;
+    background-image:  radial-gradient(#ffe3c4 0.5px, transparent 0.5px), radial-gradient(rgb(255, 156, 121) 0.5px, rgb(253, 107, 62) 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px -5px rgb(5, 5, 5 / 30%);
+    text-align: center;
+}
+.formularioTitle{
+    font-size: 2rem;
+    margin-bottom: 0.5rem
+    }
+.formularioP{
+        font-weight: 300;
+        
+    }
+.formularioLink{
+        font-weight: 400;
+        color: rgb(189, 189, 189);
+    }
+    .formularioContainer{
+        margin-top: 0.5rem;
+        display: grid;
+        gap: 0.5rem;
+        }
+     .grupo{
+        position: relative;
+        color: white;
+        font-family: 'Rubik Distressed';
+        font-size: 1rem;
+     }
+     .formularioImput{
+        width: 100%;
+        background: none;
+        color: white;
+        font-family: 'Rubik Distressed';
+        font-size: 1rem;
+        padding: 0.5rem 0.2rem;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgb(214, 106, 106);
+    }
+    .formularioLabel{
+        color: white;
+        font-family: 'Rubik Distressed';
+        font-size: 1rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        transform: translateY(10px);
+        transition: transform .5s, color 3s; 
+    }
+    .formularioImput:focus + .formularioLabel,
+    .formularioImput:not(:placeholder-shown) + .formularioLabel{
+        transform: translateY(-12px) scale(.7);
+        transform-origin: left top;
+        color: #ffb866;
+    }
+    .formularioEnviar{
+        background-color: rgb(146, 0, 0);
+        color: whitesmoke;
+        font-weight: 300;
+        font-size: 1rem;
+        padding: 0.5rem 0rem;
+        border: none;
+        border-radius: 1rem;
+       }
+
+
+
+/* Vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 700px){
+
+    header{
+        margin: 4rem;
+    }
+    
+    #pagina{
+        min-width: 95%;
+    }
+
+
+    
+    /* Elementos del encabezado */
+    .encabezado{
+        height: 0rem;
+        display: flexbox;
+    }
+    /*Contenedor de la foto de perfil (figure e img)*/
+    #perfil{
+        float: left;
+    }
+    
+    /* figure contenedor de img*/
+    #foto{
+        flex-direction: row;
+    }
+    
+    /* img contenedor de la imagen de perfil */
+    #fotoPerfil{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .upArrow{
+        height: 0.7rem;
+    }
+    
+    .downArrow{
+        height: 0.7rem;
+    }
+
+    
+    /* clase contenedora de las img */
+    .logosReducidos {
+        height: 1.5rem;
+    }
+    
+    /* Elementos del cuerpo*/
+    
+    .datos {
+        padding-left: 0.5rem;
+    }
+
+    .titulo h3 {  
+        padding: 1.4rem 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .iconoTitulo {
+        margin-left: 0.5rem;
+    }
+
+    p{
+        font-size: 0.85rem;
+    }
+    
+    #dayNight{
+        height: 1.5rem;
+    }
+
+    .formularioTitle{
+        font-size: 1.2rem;
+        margin: 0.6rem 0rem;
+    }
 }
